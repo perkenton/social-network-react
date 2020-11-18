@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Header'
-import Sidebar from "./components/Sidebar";
-import Profile from "./components/Profile";
+import Header from './components/Header/Header'
+import Sidebar from "./components/Sidebar/Sidebar";
+import Profile from "./components/Profile/Profile";
 
 import './App.css';
 

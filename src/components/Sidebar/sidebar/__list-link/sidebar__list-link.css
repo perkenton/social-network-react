@@ -1,0 +1,7 @@
+.sidebar__list-link {
+  color: #fff;
+}
+
+.sidebar__list-link:hover {
+  text-decoration: none;
+}

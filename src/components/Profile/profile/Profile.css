@@ -1,0 +1,15 @@
+@import url(./__posts/profile__posts.css);
+@import url(./__top-image/profile__top-image.css);
+@import url(./__user/profile__user.css);
+@import url(./__user-birth-day/profile__user-birth-day.css);
+@import url(./__user-city/profile__user-city.css);
+@import url(./__user-education/profile__user-education.css);
+@import url(./__user-info/profile__user-info.css);
+@import url(./__user-name/profile__user-name.css);
+@import url(./__user-photo/profile__user-photo.css);
+@import url(./__user-site/profile__user-site.css);
+@import url(./__user-site-link/profile__user-site-link.css);
+
+.profile {
+
+}
