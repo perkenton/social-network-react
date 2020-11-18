@@ -1,6 +1,7 @@
 import React from 'react';
 import photo from "../../images/malecon.jpg";
 import userPhoto from "../../images/user-photo.png";
+import MyPosts from "./MyPosts/MyPosts";
 import './profile/Profile.css';
 
 const Profile = () => {
@@ -18,14 +19,7 @@ const Profile = () => {
         </div>
       </div>
 
-      <div className="profile__posts">
-        <div className="profile__new-post">
-
-        </div>
-        <div className="profile__post">
-
-        </div>
-      </div>
+      <MyPosts />
 
     </main>
   );

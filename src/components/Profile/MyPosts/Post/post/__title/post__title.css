@@ -1,0 +1,13 @@
+.post__title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  grid-area: post__title;
+}

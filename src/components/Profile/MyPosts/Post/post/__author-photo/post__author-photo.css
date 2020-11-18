@@ -1,0 +1,5 @@
+.post__author-photo {
+  width: 48px;
+
+  grid-area: post__author-photo;
+}
