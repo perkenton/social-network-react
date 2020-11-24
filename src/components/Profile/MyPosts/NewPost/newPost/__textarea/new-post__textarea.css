@@ -1,4 +1,11 @@
 .new-post__textarea {
-  width: 75%;
+  width: 100%;
   display: block;
+  padding: 8px;
+  transition: .3s linear;
+}
+
+.new-post__textarea:focus {
+  outline: none;
+  border: 1px solid rgba(239, 75, 76, .8);
 }

@@ -6,7 +6,7 @@ import './profile/Profile.css';
 
 const Profile = () => {
   return (
-    <main className="main">
+    <>
       <img src={ photo } alt="Top photo" className="profile__top-image" />
       <div className="profile__user">
         <img src={ userPhoto } alt="User photo" className="profile__user-photo" />
@@ -20,8 +20,7 @@ const Profile = () => {
       </div>
 
       <MyPosts />
-
-    </main>
+    </>
   );
 }
 

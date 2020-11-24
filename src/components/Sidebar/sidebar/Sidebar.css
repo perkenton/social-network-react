@@ -1,9 +1,11 @@
 @import url(./__list/sidebar__list.css);
 @import url(./__list-item/sidebar__list-item.css);
 @import url(./__list-link/sidebar__list-link.css);
+@import url(./__list-link/_active/sidebar__list-link_active.css);
 
 .sidebar {
-  background-color: #0066CC;
-  padding-left: 16px;
+  background-color: #3D619B;
+  padding: 24px;
+  border-radius: 10px 0 0 0;
   grid-area: sidebar;
 }

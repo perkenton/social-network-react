@@ -1,15 +1,10 @@
-.profile__user-site-link {
+.sidebar__list-link_active {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #43506C;
-
-  transition: .3s linear;
-}
-
-.profile__user-site-link:hover {
   text-decoration: none;
-  color: #EF4B4C;
+  color: #FFB140;
+  transition: .3s linear;
 }
