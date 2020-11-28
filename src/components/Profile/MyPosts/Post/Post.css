@@ -1,0 +1,43 @@
+.post {
+  width: 75%;
+  display: grid;
+  grid-template-areas: "post__title post__title" "post__author-photo post__text";
+  grid-template-rows: auto auto;
+  grid-template-columns: auto 1fr;
+  grid-gap: 12px;
+  padding-top: 36px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.post__author-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  grid-area: post__author-photo;
+}
+.post__text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-area: post__text;
+}
+.post__title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  grid-area: post__title;
+}
+
+/*# sourceMappingURL=Post.css.map */

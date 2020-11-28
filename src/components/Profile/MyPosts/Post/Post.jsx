@@ -1,5 +1,5 @@
 import React from 'react';
-import './post/Post.css';
+import './Post.scss';
 import userPhoto from "../../../../images/user-photo.png";
 
 const Post = (props) => {

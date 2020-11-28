@@ -1,7 +1,7 @@
 import React from 'react';
 import NewPost from "./NewPost/NewPost";
 import Post from "./Post/Post";
-import './myPosts/MyPosts.css';
+import './MyPosts.scss';
 
 const MyPosts = () => {
   return (

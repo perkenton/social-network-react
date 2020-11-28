@@ -1,5 +1,5 @@
 import React from 'react';
-import './dialogs/Dialogs.css';
+import './Dialogs.scss';
 
 const Dialogs = (props) => {
   return (
