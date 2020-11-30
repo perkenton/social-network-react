@@ -25,6 +25,7 @@
   line-height: 22px;
   text-decoration: none;
   color: #E9E9EB;
+  display: block;
   transition: 0.3s linear;
 }
 .sidebar__list-link_active {

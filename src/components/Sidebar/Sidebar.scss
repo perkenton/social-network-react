@@ -32,6 +32,8 @@
     line-height: 22px;
     text-decoration: none;
     color: $menu-item-color;
+
+    display: block;
     transition: .3s linear;
 
     &_active {
