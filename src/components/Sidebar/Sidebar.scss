@@ -1,0 +1,49 @@
+@import '../../variables.scss';
+
+.sidebar {
+  height: 200px;
+
+  padding: 24px;
+
+  background-color: $blocks-background-color;
+  border-radius: $blocks-border-radius;
+  box-shadow: $blocks-box-shadow;
+
+  grid-area: sidebar;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    margin-bottom: 12px;
+  }
+  &__list-item:last-child {
+    margin-top: 32px;
+  }
+
+  &__list-link {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: $menu-item-color;
+    transition: .3s linear;
+
+    &_active {
+      color: $hover-link-color;
+    }
+  }
+  &__list-link:hover {
+    color: $hover-link-color;
+  }
+  &__list-link:focus {
+    outline: none;
+    color: $hover-link-color;
+  }
+
+}

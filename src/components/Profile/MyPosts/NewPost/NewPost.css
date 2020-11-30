@@ -1,0 +1,41 @@
+.new-post__add-button {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: 0;
+  background-color: #EF4B4C;
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s linear;
+}
+.new-post__add-button:hover {
+  transform: scale(1.1);
+}
+.new-post__add-button:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+.new-post__textarea {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  transition: 0.3s linear;
+}
+.new-post__textarea:focus {
+  outline: none;
+  border: 1px solid rgba(239, 75, 76, 0.8);
+}
+
+/*# sourceMappingURL=NewPost.css.map */

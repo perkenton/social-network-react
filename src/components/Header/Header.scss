@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+
+  border-radius: 0 0 $blocks-border-radius $blocks-border-radius;
+  background-color: $blocks-background-color;
+
+  box-shadow: $blocks-box-shadow;
+
+  grid-area: header;
+
+  &__logo {  }
+
+  &__logo-link {
+    text-decoration: none;
+    transition: .3s linear;
+  }
+
+  &__logo-link:focus {
+    outline: 1px dotted #E9E9EB;
+  }
+
+  &__logo-link:hover {
+    transform: scale(1.1);
+  }
+}

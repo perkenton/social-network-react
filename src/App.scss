@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .root {
   min-height: 100vh;
   background-color: #f5f5f5;
@@ -6,29 +8,34 @@
 .app-wrapper {
   max-width: 1200px;
   width: calc(100% - 48px);
+
   margin: 0 auto;
   padding-top: 0;
   padding-bottom: 64px;
   padding-left: 0;
   padding-right: 0;
+
   display: grid;
-  grid-template-areas: "header header" "sidebar main";
+  grid-template-areas:
+    "header header"
+    "sidebar main";
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 12fr;
   grid-gap: 10px 10px;
 }
 
+
 .main {
   grid-area: main;
   position: relative;
-  background-color: #fff;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 3px 5px rgba(104, 104, 104, 0.2);
-  padding-top: 32px;
-  padding-bottom: 36px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
 
-/*# sourceMappingURL=App.css.map */
+  background-color: #fff;
+  border-radius: $blocks-border-radius;
+  overflow: hidden;
+  box-shadow: $blocks-box-shadow;
+
+  padding-top: $main-block-padding;
+  padding-bottom: 36px;
+  padding-left: $main-block-padding;
+  padding-right: $main-block-padding;
+}
