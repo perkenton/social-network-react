@@ -1,5 +1,151 @@
 @import '../../variables.scss';
 
 .dialogs {
+  display: grid;
+  grid-template-areas:
+    'dialogs__title dialogs__title'
+    'dialogs__list dialogs__messages';
+  grid-template-columns: minmax(72px, 200px) 1fr;
+  grid-gap: 32px 12px;
+
+  &__title {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 20px;
+    color: #000;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    grid-area: dialogs__title;
+  }
+
+  &__list {
+    list-style: none;
+
+    margin: 0;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 0;
+    padding-right: 0;
+
+    border-right: 1px solid rgba(128, 128, 128, .7);
+    box-sizing: border-box;
+
+    grid-area: dialogs__list;
+  }
+
+  &__list-item {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: $blocks-border-radius 0 0 $blocks-border-radius;
+    transition: .3s linear;
+
+    &_active {
+      font-weight: 600;
+      background-color: rgba(233, 233, 235, .5);
+    }
+  }
+  &__list-item:hover {
+    font-weight: 600;
+    background-color: rgba(233, 233, 235, .5);
+  }
+
+  &__messages {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 32px;
+    padding-right: 0;
+
+    grid-area: dialogs__messages;
+  }
+
+  &__message-block {
+    display: grid;
+    grid-template-areas:
+    'dialogs__author-photo dialogs__author-name'
+    'dialogs__author-photo dialogs__message';
+    grid-template-columns: 48px 1fr;
+    grid-gap: 0 8px;
+
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__message-block:first-child {
+    padding-top: 0;
+  }
+
+  &__author-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    grid-area: dialogs__author-photo;
+  }
+
+  &__author-name {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    grid-area: dialogs__author-name;
+  }
+
+  &__message {
+    font-family: $font-main;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    box-sizing: border-box;
+    grid-area: dialogs__message;
+  }
 
 }

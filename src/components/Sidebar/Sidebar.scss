@@ -1,6 +1,8 @@
 @import '../../variables.scss';
 
 .sidebar {
+  height: 200px;
+
   padding: 24px;
 
   background-color: $blocks-background-color;
@@ -33,21 +35,15 @@
     transition: .3s linear;
 
     &_active {
-      font-family: $font-main;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 20px;
-      text-decoration: none;
-      color: #FFB140;
-      transition: .3s linear;
+      color: $hover-link-color;
     }
   }
   &__list-link:hover {
     color: $hover-link-color;
   }
   &__list-link:focus {
-    outline: 1px dotted #E9E9EB;
+    outline: none;
+    color: $hover-link-color;
   }
 
 }

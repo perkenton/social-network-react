@@ -1,21 +1,30 @@
 import React from 'react';
-import Header from './components/Header/Header'
-import Sidebar from "./components/Sidebar/Sidebar";
-import Profile from "./components/Profile/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
-
+import { BrowserRouter, Route } from "react-router-dom";
 import './App.scss';
+import Header from './components/Header/Header';
+import Sidebar from './components/Sidebar/Sidebar';
+import Profile from './components/Profile/Profile';
+import Dialogs from './components/Dialogs/Dialogs';
+import News from './components/News/News';
+import Music from './components/Music/Music';
+import Setting from './components/Setting/Setting';
+
 
 const App = () => {
   return (
-    <div className="app-wrapper">
-      <Header />
-      <Sidebar />
-      <main className="main">
-        <Profile />
-        {/*<Dialogs />*/}
-      </main>
-    </div>
+    <BrowserRouter>
+      <div className="app-wrapper">
+        <Header />
+        <Sidebar />
+        <main className="main">
+          <Route path='/dialogs' component={Dialogs} />
+          <Route path='/profile' component={Profile} />
+          <Route path='/news' component={News} />
+          <Route path='/music' component={Music} />
+          <Route path='/setting' component={Setting} />
+        </main>
+      </div>
+    </BrowserRouter>
   );
 }
 

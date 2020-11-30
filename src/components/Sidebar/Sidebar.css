@@ -1,4 +1,5 @@
 .sidebar {
+  height: 200px;
   padding: 24px;
   background-color: #3D619B;
   border-radius: 6px;
@@ -27,20 +28,14 @@
   transition: 0.3s linear;
 }
 .sidebar__list-link_active {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
   color: #FFB140;
-  transition: 0.3s linear;
 }
 .sidebar__list-link:hover {
-  color: #EF4B4C;
+  color: #FFB140;
 }
 .sidebar__list-link:focus {
-  outline: 1px dotted #E9E9EB;
+  outline: none;
+  color: #FFB140;
 }
 
 /*# sourceMappingURL=Sidebar.css.map */

@@ -7,7 +7,9 @@ import './Profile.scss';
 const Profile = () => {
   return (
     <>
-      <img src={ photo } alt="Top photo" className="profile__top-image" />
+      <div className="profile__top-image-wrapper">
+        <img src={ photo } alt="Top photo" className="profile__top-image" />
+      </div>
       <div className="profile__user">
         <img src={ userPhoto } alt="User photo" className="profile__user-photo" />
         <div className="profile__user-info">

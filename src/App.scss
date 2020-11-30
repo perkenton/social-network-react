@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .root {
+  min-height: 100vh;
   background-color: #f5f5f5;
 }
 
@@ -26,11 +27,15 @@
 
 .main {
   grid-area: main;
+  position: relative;
 
   background-color: #fff;
   border-radius: $blocks-border-radius;
   overflow: hidden;
   box-shadow: $blocks-box-shadow;
 
+  padding-top: $main-block-padding;
   padding-bottom: 36px;
+  padding-left: $main-block-padding;
+  padding-right: $main-block-padding;
 }

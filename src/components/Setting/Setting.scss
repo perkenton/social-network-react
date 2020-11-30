@@ -1,19 +1,17 @@
-@import '../../../variables.scss';
+@import '../../variables.scss';
 
-.my-posts {
-  width: 75%;
-  padding-top: 36px;
+.setting {
 
   &__title {
     font-family: $font-main;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 32px;
     line-height: 20px;
     color: #000;
 
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
   }
