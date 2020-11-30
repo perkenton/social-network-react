@@ -4,8 +4,10 @@
 
 ## О проекте / About project
 Учебный проект курсов «[React JS — путь самурая 1.0][2]». Социальная сеть с применением библиотек React и Redux.
+Проект в процессе разработки.
 
-"React JS - The Samurai Way 1.0" training project. Social network using React and Redux libraries.
+"[React JS - The Samurai Way 1.0][2]" training project. Social network using React and Redux libraries.
+The project is under development.
 
 
 ## Технологии и методы / Technology stack
