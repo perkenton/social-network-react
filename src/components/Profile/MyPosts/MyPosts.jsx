@@ -15,8 +15,10 @@ const MyPosts = () => {
       <h2 className="my-posts__title">Мои посты</h2>
       <NewPost />
 
-      <Post text="Hello!" likesCount='5' />
-      <Post text="Posted post" likesCount='4' />
+      {
+        postsData.map( post => <Post id={ post.id } text={ post.text } likesCount={ post.likesCount } /> )
+      }
+
     </div>
   );
 }

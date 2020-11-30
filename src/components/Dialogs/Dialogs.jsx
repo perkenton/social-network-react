@@ -24,14 +24,15 @@ const Dialogs = (props) => {
       <h1 className="dialogs__title">Dialogs</h1>
 
       <ul className="dialogs__list">
-        <DialogItem name='Julia' id='1' />
-        <DialogItem name='Egor' id='2' />
+        {
+          dialogsData.map( dialog => <DialogItem id={ dialog.id } name={ dialog.name } /> )
+        }
       </ul>
 
       <div className="dialogs__messages">
-        <Message id="1" name='Julia' text='Hi!' />
-        <Message id="2" name='Julia' text='Yo' />
-        <Message id="3" name='Julia' text='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea magnam odit qui ratione, voluptas voluptatibus!' />
+        {
+          messagesData.map( message => <Message id={ message.id } name={ message.name } text={ message.text } /> )
+        }
       </div>
     </div>
   );
