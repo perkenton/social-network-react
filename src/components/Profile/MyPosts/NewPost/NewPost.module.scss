@@ -10,8 +10,6 @@
     line-height: 18px;
     color: #fff;
 
-    border-radius: 20px;
-
     margin-top: 16px;
     margin-bottom: 0;
     margin-left: auto;
@@ -23,18 +21,23 @@
     padding-right: 32px;
 
     border: 0;
-    background-color: $hover-link-color;
+    border-radius: 20px;
+    background-color: $button-color;
     cursor: pointer;
     display: flex;
     transition: .3s linear;
 
     &:hover {
-      transform: scale(1.1);
+      box-shadow: $button-hover-box-shadow;
     }
 
     &:focus {
       outline: none;
-      transform: scale(1.1);
+      box-shadow: $button-hover-box-shadow;
+    }
+
+    &:active {
+      box-shadow: $button-active-box-shadow;
     }
   }
 
