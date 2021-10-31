@@ -6,8 +6,8 @@
   display: grid;
   grid-template-areas:
     'post__title post__title'
-    'post__author-photo post__text'
-    'post__author-photo post__likes';
+    'post__authorPhoto post__text'
+    'post__authorPhoto post__likes';
   grid-template-rows: auto auto;
   grid-template-columns: auto 1fr;
   grid-gap: 12px;
@@ -17,12 +17,12 @@
   padding-left: 0;
   padding-right: 0;
 
-  &__author-photo {
+  &__authorPhoto {
     width: 64px;
     height: 64px;
     border-radius: 50%;
     object-fit: cover;
-    grid-area: post__author-photo;
+    grid-area: post__authorPhoto;
   }
 
   &__text {

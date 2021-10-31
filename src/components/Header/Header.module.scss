@@ -21,16 +21,16 @@
 
   &__logo {  }
 
-  &__logo-link {
+  &__logoLink {
     text-decoration: none;
     transition: .3s linear;
-  }
 
-  &__logo-link:focus {
-    outline: 1px dotted #E9E9EB;
-  }
+    &:focus {
+      outline: 1px dotted #E9E9EB;
+    }
 
-  &__logo-link:hover {
-    transform: scale(1.1);
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

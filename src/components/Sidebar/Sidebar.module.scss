@@ -17,14 +17,15 @@
     padding: 0;
   }
 
-  &__list-item {
+  &__listItem {
     margin-bottom: 12px;
-  }
-  &__list-item:last-child {
-    margin-top: 32px;
+
+    &:last-child {
+      margin-top: 32px;
+    }
   }
 
-  &__list-link {
+  &__listLink {
     font-family: $font-main;
     font-style: normal;
     font-weight: 400;
@@ -36,16 +37,17 @@
     display: block;
     transition: .3s linear;
 
+    &:hover {
+      color: $hover-link-color;
+    }
+
+    &:focus {
+      outline: none;
+      color: $hover-link-color;
+    }
+
     &_active {
       color: $hover-link-color;
     }
   }
-  &__list-link:hover {
-    color: $hover-link-color;
-  }
-  &__list-link:focus {
-    outline: none;
-    color: $hover-link-color;
-  }
-
 }

@@ -1,8 +1,8 @@
 @import '../../../variables.scss';
 
-.dialogs__list-item {  }
+.dialogs__listItem {  }
 
-.dialogs__list-link {
+.dialogs__listLink {
   font-family: $font-main;
   font-style: normal;
   font-weight: 400;
@@ -30,9 +30,9 @@
     font-weight: 600;
     background-color: rgba(233, 233, 235, .5);
   }
-}
 
-.dialogs__list-link:hover {
-  font-weight: 600;
-  background-color: rgba(233, 233, 235, .5);
+  &:hover {
+    font-weight: 600;
+    background-color: rgba(233, 233, 235, .5);
+  }
 }
