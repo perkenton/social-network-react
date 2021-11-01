@@ -42,7 +42,8 @@
     color: $menu-active-item-color;
   }
   &:focus {
-    outline: 1px dotted $accent-color;
+    outline: none;
+    color: $menu-active-item-color;
   }
 
   &_active {
