@@ -12,7 +12,7 @@ const MyPosts = () => {
 
   return (
     <div className={ styles.myPosts }>
-      <h2 className={ styles.myPosts__title }>Мои посты</h2>
+      <h2 className={ styles.title }>Мои посты</h2>
       <NewPost />
 
       {

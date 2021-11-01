@@ -3,18 +3,18 @@
 .myPosts {
   width: 75%;
   padding-top: 36px;
+}
 
-  &__title {
-    font-family: $font-main;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 20px;
-    color: $primary-text;
+.title {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: $primary-text;
 
-    margin-top: 0;
-    margin-bottom: 16px;
-    margin-left: 0;
-    margin-right: 0;
-  }
+  margin-top: 0;
+  margin-bottom: 16px;
+  margin-left: 0;
+  margin-right: 0;
 }
