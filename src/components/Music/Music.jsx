@@ -4,7 +4,7 @@ import styles from './Music.module.scss';
 const Music = () => {
   return (
     <>
-      <h1 className={ styles.music__title }>Music</h1>
+      <h1 className={ styles.title }>Music</h1>
     </>
   );
 }
