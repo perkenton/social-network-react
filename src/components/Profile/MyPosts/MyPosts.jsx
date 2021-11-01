@@ -1,7 +1,7 @@
 import React from 'react';
-import NewPost from "./NewPost/NewPost";
-import Post from "./Post/Post";
-import './MyPosts.scss';
+import NewPost from './NewPost/NewPost';
+import Post from './Post/Post';
+import styles from './MyPosts.module.scss';
 
 const MyPosts = () => {
   const postsData = [
@@ -11,8 +11,8 @@ const MyPosts = () => {
   ];
 
   return (
-    <div className="my-posts">
-      <h2 className="my-posts__title">Мои посты</h2>
+    <div className={ styles.myPosts }>
+      <h2 className={ styles.title }>Мои посты</h2>
       <NewPost />
 
       {

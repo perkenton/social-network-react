@@ -1,5 +1,5 @@
 import React from 'react';
-import './Dialogs.scss';
+import styles from './Dialogs.module.scss';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
 
@@ -20,19 +20,15 @@ const Dialogs = (props) => {
   ];
 
   return (
-    <div className="dialogs">
-      <h1 className="dialogs__title">Dialogs</h1>
+    <div className={ styles.dialogs }>
+      <h1 className={ styles.title }>Dialogs</h1>
 
-      <ul className="dialogs__list">
-        {
-          dialogsData.map( dialog => <DialogItem id={ dialog.id } name={ dialog.name } /> )
-        }
+      <ul className={ styles.list }>
+        { dialogsData.map( dialog => <DialogItem id={ dialog.id } name={ dialog.name } /> ) }
       </ul>
 
-      <div className="dialogs__messages">
-        {
-          messagesData.map( message => <Message id={ message.id } name={ message.name } text={ message.text } /> )
-        }
+      <div className={ styles.messages }>
+        { messagesData.map( message => <Message id={ message.id } name={ message.name } text={ message.text } /> ) }
       </div>
     </div>
   );

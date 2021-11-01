@@ -1,26 +1,26 @@
 import React from 'react';
-import './Sidebar.scss';
+import styles from './Sidebar.module.scss';
 import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <nav className="sidebar">
-      <ul className="sidebar__list">
+    <nav className={ styles.sidebar }>
+      <ul className={ styles.menuList }>
 
-        <li className="sidebar__list-item">
-          <NavLink to="/profile" className="sidebar__list-link" activeClassName="sidebar__list-link_active">Profile</NavLink>
+        <li className={ styles.menuListItem }>
+          <NavLink to='/profile' className={ styles.menuListLink } activeClassName={ styles.menuListLink_active }>Profile</NavLink>
         </li>
-        <li className="sidebar__list-item">
-          <NavLink to="/dialogs" className="sidebar__list-link" activeClassName="sidebar__list-link_active">Messages</NavLink>
+        <li className={ styles.menuListItem }>
+          <NavLink to='/dialogs' className={ styles.menuListLink } activeClassName={ styles.menuListLink_active }>Messages</NavLink>
         </li>
-        <li className="sidebar__list-item">
-          <NavLink to="/news" className="sidebar__list-link" activeClassName="sidebar__list-link_active">News</NavLink>
+        <li className={ styles.menuListItem }>
+          <NavLink to='/news' className={ styles.menuListLink } activeClassName={ styles.menuListLink_active }>News</NavLink>
         </li>
-        <li className="sidebar__list-item">
-          <NavLink to="/music" className="sidebar__list-link" activeClassName="sidebar__list-link_active">Music</NavLink>
+        <li className={ styles.menuListItem }>
+          <NavLink to='/music' className={ styles.menuListLink } activeClassName={ styles.menuListLink_active }>Music</NavLink>
         </li>
-        <li className="sidebar__list-item">
-          <NavLink to="/setting" className="sidebar__list-link" activeClassName="sidebar__list-link_active">Setting</NavLink>
+        <li className={ styles.menuListItem }>
+          <NavLink to='/setting' className={ styles.menuListLink } activeClassName={ styles.menuListLink_active }>Setting</NavLink>
         </li>
 
       </ul>

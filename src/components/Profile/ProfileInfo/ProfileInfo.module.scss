@@ -1,0 +1,91 @@
+@import '../../../styles/variables';
+
+.topImageWrapper {
+  min-height: 128px;
+}
+
+.topImage {
+  width: 100%;
+  height: 128px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  object-fit: cover;
+}
+
+.userInfoBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.userPhoto {
+  width: 128px;
+  height: 148px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.userName {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 20px;
+  color: $primary-text;
+
+  margin-top: 0;
+  margin-bottom: 18px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.userInfoItem {
+  margin-top: 0;
+  margin-bottom: 8px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.primaryText {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-text;
+}
+
+.secondaryText {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-text;
+}
+
+.siteLink {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $link-color;
+
+  transition: .1s linear;
+
+  &:hover {
+    text-decoration: none;
+    color: $link-hover-color;
+  }
+
+  &:focus {
+    outline: none;
+    color: $menu-active-item-color;
+  }
+}

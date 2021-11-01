@@ -1,0 +1,54 @@
+@import '../../../../styles/variables';
+
+.newPost { }
+
+.addButton {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: $system-white;
+
+  margin-top: 16px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: 0;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  border: 0;
+  border-radius: 20px;
+  background-color: $button-color;
+  cursor: pointer;
+  display: flex;
+  transition: .3s linear;
+
+  &:hover {
+    box-shadow: $button-hover-box-shadow;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: $button-hover-box-shadow;
+  }
+
+  &:active {
+    box-shadow: $button-active-box-shadow;
+  }
+}
+
+.textarea {
+  width: 100%;
+  display: block;
+  padding: 8px;
+  transition: .3s linear;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $dark-primary-color;
+  }
+}

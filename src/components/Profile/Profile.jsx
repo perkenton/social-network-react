@@ -1,5 +1,5 @@
 import React from 'react';
-import './Profile.scss';
+import styles from './Profile.module.scss';
 import MyPosts from './MyPosts/MyPosts';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 

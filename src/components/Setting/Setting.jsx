@@ -1,10 +1,10 @@
 import React from 'react';
-import './Setting.scss';
+import styles from './Setting.module.scss';
 
 const Setting = () => {
   return (
     <>
-      <h1 className="setting__title">Setting</h1>
+      <h1 className={ styles.title }>Setting</h1>
     </>
   );
 }

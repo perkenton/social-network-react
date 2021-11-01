@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+@import '../../styles/styles';
+
+.dialogs {
+  display: grid;
+  grid-template-areas:
+    'dialogs__title dialogs__title'
+    'dialogs__list dialogs__messages';
+  grid-template-columns: minmax(72px, 200px) auto;
+  grid-gap: 32px 12px;
+}
+
+.title {
+  @extend .sectionTitle;
+  grid-area: dialogs__title;
+}
+
+.list {
+  list-style: none;
+
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 0;
+  padding-right: 0;
+
+  border-right: 1px solid rgba(128, 128, 128, .7);
+  box-sizing: border-box;
+
+  grid-area: dialogs__list;
+}
+
+.messages {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 32px;
+  padding-right: 0;
+
+  grid-area: dialogs__messages;
+}

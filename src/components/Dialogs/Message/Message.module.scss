@@ -1,10 +1,10 @@
-@import '../../../variables.scss';
+@import '../../../styles/variables';
 
-.dialogs__message-block {
+.messageBlock {
   display: grid;
   grid-template-areas:
-    'dialogs__author-photo dialogs__author-name'
-    'dialogs__author-photo dialogs__message';
+    'dialogs__authorPhoto dialogs__authorName'
+    'dialogs__authorPhoto dialogs__message';
   grid-template-columns: 48px 1fr;
   grid-gap: 0 8px;
 
@@ -12,26 +12,27 @@
   padding-bottom: 14px;
   padding-left: 0;
   padding-right: 0;
-}
-.dialogs__message-block:first-child {
-  padding-top: 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
 }
 
-.dialogs__author-photo {
+.authorPhoto {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
 
-  grid-area: dialogs__author-photo;
+  grid-area: dialogs__authorPhoto;
 }
 
-.dialogs__author-name {
+.authorName {
   font-family: $font-main;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  color: #000;
+  color: $primary-text;
 
   margin-top: 0;
   margin-bottom: 0;
@@ -43,16 +44,16 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  grid-area: dialogs__author-name;
+  grid-area: dialogs__authorName;
 }
 
-.dialogs__message {
+.message {
   font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000;
+  color: $primary-text;
 
   margin-top: 0;
   margin-bottom: 0;

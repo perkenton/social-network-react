@@ -1,10 +1,10 @@
 import React from 'react';
-import './News.scss';
+import styles from './News.module.scss';
 
 const News = () => {
   return (
     <>
-      <h1 className="news__title">News</h1>
+      <h1 className={ styles.title }>News</h1>
     </>
   );
 }

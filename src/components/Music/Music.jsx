@@ -1,10 +1,10 @@
 import React from 'react';
-import './Music.scss';
+import styles from './Music.module.scss';
 
 const Music = () => {
   return (
     <>
-      <h1 className="music__title">Music</h1>
+      <h1 className={ styles.title }>Music</h1>
     </>
   );
 }

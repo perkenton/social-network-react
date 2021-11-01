@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.scss';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
@@ -13,10 +13,10 @@ import Setting from './components/Setting/Setting';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="app-wrapper">
+      <div className='appWrapper'>
         <Header />
         <Sidebar />
-        <main className="main">
+        <main className='main'>
           <Route path='/dialogs' component={Dialogs} />
           <Route path='/profile' component={Profile} />
           <Route path='/news' component={News} />

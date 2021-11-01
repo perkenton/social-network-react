@@ -1,15 +1,15 @@
-@import '../../../variables.scss';
+@import '../../../styles/variables';
 
-.dialogs__list-item {  }
+.listItem {  }
 
-.dialogs__list-link {
+.listLink {
   font-family: $font-main;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: #000;
+  color: $primary-text;
 
   display: block;
 
@@ -30,9 +30,9 @@
     font-weight: 600;
     background-color: rgba(233, 233, 235, .5);
   }
-}
 
-.dialogs__list-link:hover {
-  font-weight: 600;
-  background-color: rgba(233, 233, 235, .5);
+  &:hover {
+    font-weight: 600;
+    background-color: rgba(233, 233, 235, .5);
+  }
 }
