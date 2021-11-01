@@ -1,6 +1,6 @@
 @import '../../../styles/variables';
 
-.dialogs__messageBlock {
+.messageBlock {
   display: grid;
   grid-template-areas:
     'dialogs__authorPhoto dialogs__authorName'
@@ -18,7 +18,7 @@
   }
 }
 
-.dialogs__authorPhoto {
+.authorPhoto {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -27,7 +27,7 @@
   grid-area: dialogs__authorPhoto;
 }
 
-.dialogs__authorName {
+.authorName {
   font-family: $font-main;
   font-style: normal;
   font-weight: 600;
@@ -47,7 +47,7 @@
   grid-area: dialogs__authorName;
 }
 
-.dialogs__message {
+.message {
   font-family: $font-main;
   font-style: normal;
   font-weight: 400;
