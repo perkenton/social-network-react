@@ -16,40 +16,40 @@
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+}
 
-  &__authorPhoto {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    object-fit: cover;
-    grid-area: post__authorPhoto;
-  }
+.authorPhoto {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  grid-area: post__authorPhoto;
+}
 
-  &__text {
-    font-family: $font-main;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: $primary-text;
+.text {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-text;
 
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
-    grid-area: post__text;
-  }
+  grid-area: post__text;
+}
 
-  &__likes {
-    font-family: $font-main;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: $primary-text;
+.likes {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $primary-text;
 
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 
-    grid-area: post__likes;
-  }
+  grid-area: post__likes;
 }
