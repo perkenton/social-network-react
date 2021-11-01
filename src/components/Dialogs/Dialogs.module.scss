@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/styles';
 
 .dialogs {
   display: grid;
@@ -7,45 +8,33 @@
     'dialogs__list dialogs__messages';
   grid-template-columns: minmax(72px, 200px) auto;
   grid-gap: 32px 12px;
+}
 
-  &__title {
-    font-family: $font-main;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 20px;
-    color: #000;
+.title {
+  @extend .sectionTitle;
+  grid-area: dialogs__title;
+}
 
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+.list {
+  list-style: none;
 
-    grid-area: dialogs__title;
-  }
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 0;
+  padding-right: 0;
 
-  &__list {
-    list-style: none;
+  border-right: 1px solid rgba(128, 128, 128, .7);
+  box-sizing: border-box;
 
-    margin: 0;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 0;
-    padding-right: 0;
+  grid-area: dialogs__list;
+}
 
-    border-right: 1px solid rgba(128, 128, 128, .7);
-    box-sizing: border-box;
+.messages {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 32px;
+  padding-right: 0;
 
-    grid-area: dialogs__list;
-  }
-
-  &__messages {
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 32px;
-    padding-right: 0;
-
-    grid-area: dialogs__messages;
-  }
-
+  grid-area: dialogs__messages;
 }

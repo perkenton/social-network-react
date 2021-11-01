@@ -21,18 +21,14 @@ const Dialogs = (props) => {
 
   return (
     <div className={ styles.dialogs }>
-      <h1 className={ styles.dialogs__title }>Dialogs</h1>
+      <h1 className={ styles.title }>Dialogs</h1>
 
-      <ul className={ styles.dialogs__list }>
-        {
-          dialogsData.map( dialog => <DialogItem id={ dialog.id } name={ dialog.name } /> )
-        }
+      <ul className={ styles.list }>
+        { dialogsData.map( dialog => <DialogItem id={ dialog.id } name={ dialog.name } /> ) }
       </ul>
 
-      <div className={ styles.dialogs__messages }>
-        {
-          messagesData.map( message => <Message id={ message.id } name={ message.name } text={ message.text } /> )
-        }
+      <div className={ styles.messages }>
+        { messagesData.map( message => <Message id={ message.id } name={ message.name } text={ message.text } /> ) }
       </div>
     </div>
   );
