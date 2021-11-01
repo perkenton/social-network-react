@@ -8,7 +8,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 18px;
-    color: #fff;
+    color: $system-white;
 
     margin-top: 16px;
     margin-bottom: 0;
@@ -49,7 +49,7 @@
 
     &:focus {
       outline: none;
-      border: 1px solid rgba(239, 75, 76, .8);
+      border: 1px solid $dark-primary-color;
     }
   }
 
