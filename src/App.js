@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import styles from './App.module.scss';
+import './App.scss';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import Profile from './components/Profile/Profile';
@@ -13,10 +13,10 @@ import Setting from './components/Setting/Setting';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className={ styles.appWrapper }>
+      <div className='appWrapper'>
         <Header />
         <Sidebar />
-        <main className={ styles.main }>
+        <main className='main'>
           <Route path='/dialogs' component={Dialogs} />
           <Route path='/profile' component={Profile} />
           <Route path='/news' component={News} />
