@@ -18,19 +18,19 @@
   box-shadow: $blocks-box-shadow;
 
   grid-area: header;
+}
 
-  &__logo {  }
+.logo {  }
 
-  &__logoLink {
-    text-decoration: none;
-    transition: .3s linear;
+.logoLink {
+  text-decoration: none;
+  transition: .3s linear;
 
-    &:focus {
-      outline: 1px dotted #E9E9EB;
-    }
+  &:focus {
+    outline: 1px dotted $accent-color;
+  }
 
-    &:hover {
-      transform: scale(1.1);
-    }
+  &:hover {
+    transform: scale(1.1);
   }
 }
