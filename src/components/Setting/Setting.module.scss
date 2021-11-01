@@ -1,18 +1,8 @@
 @import '../../styles/variables';
+@import '../../styles/styles';
 
-.setting {
+.setting { }
 
-  &__title {
-    font-family: $font-main;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 20px;
-    color: $primary-text;
-
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
+.title {
+  @extend .sectionTitle;
 }
