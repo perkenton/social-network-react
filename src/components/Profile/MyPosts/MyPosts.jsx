@@ -16,7 +16,7 @@ const MyPosts = () => {
       <NewPost />
 
       {
-        postsData.map( post => <Post id={ post.id } text={ post.text } likesCount={ post.likesCount } /> )
+        postsData.map( post => <Post key={ post.id } id={ post.id } text={ post.text } likesCount={ post.likesCount } /> )
       }
 
     </div>

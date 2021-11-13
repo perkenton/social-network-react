@@ -24,11 +24,11 @@ const Dialogs = (props) => {
       <h1 className={ styles.title }>Dialogs</h1>
 
       <ul className={ styles.list }>
-        { dialogsData.map( dialog => <DialogItem id={ dialog.id } name={ dialog.name } /> ) }
+        { dialogsData.map( dialog => <DialogItem key={ dialog.id } id={ dialog.id } name={ dialog.name } /> ) }
       </ul>
 
       <div className={ styles.messages }>
-        { messagesData.map( message => <Message id={ message.id } name={ message.name } text={ message.text } /> ) }
+        { messagesData.map( message => <Message key={ message.id } id={ message.id } name={ message.name } text={ message.text } /> ) }
       </div>
     </div>
   );
